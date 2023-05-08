@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/requests
+Content-Type: application/json
+
+{
+    "person": "98765",
+    "startDate": "01.06.2023",
+    "endDate": "10.06.2023",
+    "type": "VACATION",
+    "created": "01.04.2023",
+    "status": "PENDING",
+    "message": "Kesäloma"
+}
