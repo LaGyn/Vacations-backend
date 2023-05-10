@@ -30,8 +30,14 @@ const getRequests = (): VacationRequest[] => {
     return entries;
   };
 
+  const filterById = (person: string, id: number) => {
+    const entry =vacationRequests.filter(request => request.person === person && request.id === id);
+    return entry;
+  };
+
   export default {
     getRequests,
     addRequest,
-    filterByPerson
+    filterByPerson,
+    filterById
   };
